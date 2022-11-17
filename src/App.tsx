@@ -13,14 +13,18 @@ import FrontOfCard from "./components/flipCard/Front";
 import BackOfCard from "./components/flipCard/Back";
 
 const App = () => {
+  const [darkMode,setDarkMode] = useState(false);
+
   return (
-    <div className="h-screen w-screen px-10">
-      <section className=" h-screen">
+
+    <div className={darkMode?"dark":""}>
+    <div className=" m-0 p-0 h-full w-full px-10 overflow-hidden dark:bg-gray-800">
+      <section className=" h-full">
         <nav className="py-10 mb-12 flex justify-between">
-          <h1 className="font-bold text-xl font-Roboto_Mono">OUTSIDER</h1>
+          <h1 className="font-bold text-xl font-Roboto_Mono dark:text-white">OUTSIDER</h1>
           <ul className="flex items-center">
             <li>
-              <BsFillMoonStarsFill className="cursor-pointer text-xl" />
+              <BsFillMoonStarsFill onClick = {()=>setDarkMode(!darkMode)} className="dark:text-white cursor-pointer text-xl" />
             </li>
             <li>
               <a
@@ -34,23 +38,23 @@ const App = () => {
           </ul>
         </nav>
         <div className="text-center p-5">
-          <h2 className="text-5xl font-medium text-blue-500 my-2 md:text-6xl">
+          <h2 className="dark:text-white text-5xl font-medium text-blue-500 my-2 md:text-6xl">
             Tanveer Ahmed
           </h2>
-          <h3 className="text-4xl mb-5">Software Developer</h3>
-          <p>
+          <h3 className=" dark:text-blue-500 text-4xl mb-5">Software Developer</h3>
+          <p className="dark:text-white">
             {" "}
             A Software Developer who is also a{" "}
-            <span className="text-sm font-light p-[2px] rounded-md bg-teal-100">
+            <span className="text-sm text-black font-light p-[4px] rounded-md bg-teal-100">
               Jack of All Trades
             </span>{" "}
           </p>
-          <p> Worked with Python , Javascript , C++ , Solidity , JAVA , SQL</p>
+          <p className="dark:text-white my-3"> Worked with React.js , Node.js , Express.js ,Nest.js , MongoDB, TypeORM , Sqlite , mysql, Python , Javascript , C++ , Solidity , JAVA , SQL</p>
         </div>
         <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-          <AiFillFacebook className="text-xl" />
-          <AiFillLinkedin className="text-xl" />
-          <AiFillInstagram className="text-xl" />
+          <AiFillFacebook className="dark:text-white text-2xl" />
+          <AiFillLinkedin className="dark:text-white text-2xl" />
+          <AiFillInstagram className="dark:text-white text-2xl" />
         </div>
         <div
           className="relative mx-auto bg-gradient-to-b
@@ -127,6 +131,7 @@ const App = () => {
         
         </div>
       </section>
+    </div>
     </div>
   );
 };
