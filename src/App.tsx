@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "../dist/output.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
@@ -14,6 +14,16 @@ import BackOfCard from "./components/flipCard/Back";
 
 const App = () => {
   const [darkMode,setDarkMode] = useState(false);
+  
+  useEffect(()=>{
+    if(localStorage.getItem('mode')!='') setDarkMode(JSON.parse(localStorage.getItem('mode')!))
+    else localStorage.setItem('mode','false');
+  },[])
+  
+  const toggleDarkMode = () => {
+    localStorage.setItem('mode',JSON.stringify(!darkMode));
+    setDarkMode(!darkMode)
+  }
 
   return (
 
@@ -24,7 +34,7 @@ const App = () => {
           <h1 className="font-bold text-xl font-Roboto_Mono dark:text-white">OUTSIDER</h1>
           <ul className="flex items-center">
             <li>
-              <BsFillMoonStarsFill onClick = {()=>setDarkMode(!darkMode)} className="dark:text-white cursor-pointer text-xl" />
+              <BsFillMoonStarsFill onClick = {()=>toggleDarkMode()} className="dark:text-white cursor-pointer text-xl" />
             </li>
             <li>
               <a
