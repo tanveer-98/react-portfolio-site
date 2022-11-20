@@ -48,23 +48,23 @@ const App = () => {
           </ul>
         </nav>
         <div className="text-center p-5">
-          <h2 className="dark:text-white text-5xl font-medium text-blue-500 my-2 md:text-6xl">
+          <h3 className="dark:text-white text-5xl font-medium text-blue-500 my-2 md:text-6xl">
             Tanveer Ahmed
-          </h2>
-          <h3 className=" dark:text-blue-500 text-4xl mb-5">Software Developer</h3>
-          <p className="dark:text-white">
+          </h3>
+          <h3 className=" dark:text-blue-500 ">Software Development Engineer</h3>
+          <p className="dark:text-white section-content">
             {" "}
             A Software Developer who is also a{" "}
             <span className="text-sm text-black font-light p-[4px] rounded-md bg-teal-100">
               Jack of All Trades
             </span>{" "}
           </p>
-          <p className="dark:text-white my-3"> Worked with React.js , Node.js , Express.js ,Nest.js , MongoDB, TypeORM , Sqlite , mysql, Python , Javascript , C++ , Solidity , JAVA , SQL</p>
+          <p className="dark:text-white my-3 section-content px-10"> Worked with React.js , Node.js , Express.js ,Nest.js , MongoDB, TypeORM , Sqlite , mysql, Python , Javascript , C++ , Solidity , JAVA , SQL</p>
         </div>
-        <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-          <AiFillFacebook className="dark:text-white text-2xl" />
-          <AiFillLinkedin className="dark:text-white text-2xl" />
-          <AiFillInstagram className="dark:text-white text-2xl" />
+        <div className="section-container text-5xl flex flex-1 justify-center gap-16 py-3 text-gray-600">
+          <AiFillFacebook href ="www.google.com" className=" section-icons " />
+          <AiFillLinkedin className=" section-icons " />
+          <AiFillInstagram className=" section-icons  " />
         </div>
         <div
           className="relative mx-auto bg-gradient-to-b
@@ -77,23 +77,97 @@ const App = () => {
         
       </section>
 
-      <section className="py-10 max-w-[1280px] mx-auto">
+      <section id="aboutme" className="py-10 max-w-5xl mx-auto">
         <div>
-          <h3 className="text-3xl py-1 dark:text-white ">Portfolio</h3>
-          <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            Since the beginning of my journey as a freelance designer and
-            developer, I've done remote work for
-            <span className="text-teal-500"> agencies </span>
-            consulted for <span className="text-teal-500">startups </span>
+          <h3 className="text-3xl py-1 text-center dark:text-white ">About Me </h3>
+          <p className=" section-content dark:text-gray-200">
+            I am a graduate from National 
+            <span className="text-teal-500"> National Institute of Technolog, Silchar </span> specializing in Computer Science and Engineering.
+
+            </p>
+          <p className=" section-content text-justify dark:text-gray-200">I am currently working as a Senior Software Development Engineer at  <span className="text-teal-500">Brillio Technologies </span>  specializing on Full Stack App Developemnt
+            consulted for
             and collaborated with talanted people to create digital products for
             both business and consumer use.
           </p>
-          <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            I offer from a wide range of services, including brand design,
-            programming and teaching.
+          <p className=" section-content text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+            I aspire to become a well versed Backend Software Engineer as i have a keep interest in backend technology 
           </p>
         </div>
-        <div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 py-10 lg:flex-row lg:flex-wrap">
+        </section>
+        {/* PROJECTS */}
+
+        <section id="skills">
+        <h3 className="text-3xl py-1 text-center dark:text-white ">My Skills</h3>
+        <div
+          className="flex flex-wrap flex-col items-center max-w-4xl mx-auto justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12"
+        >
+          {/* <!-- Item 1 --> */}
+          <div className="flex flex-col items-center space-y-5">
+            <img src="./src/assets/skills/react.png" alt="" className="mb-6" />
+            <h5 >React</h5>
+            
+          </div>
+
+          {/* <!-- Item 2 --> */}
+          <div className="flex flex-col items-center space-y-5">
+            <img src="./src/assets/skills/react.png" alt="" className="mb-6 " />
+            <h5 >Node</h5>
+            
+          </div>
+
+          {/* <!-- Item 3 --> */}
+          <div className="flex flex-col items-center space-y-5">
+            <img src="./src/assets/skills/react.png" alt="" className="mb-6" />
+            <h5 >Express</h5>
+            
+          </div>
+          <div className="flex flex-col items-center space-y-5">
+            <img src="./src/assets/skills/react.png" alt="" className="mb-6" />
+            <h5 >Express</h5>
+            
+          </div>
+          <div className="flex flex-col items-center space-y-5">
+            <img src="./src/assets/skills/react.png" alt="" className="mb-6" />
+            <h5 >Express</h5>
+            
+          </div>
+          <div className="flex flex-col items-center space-y-5">
+            <img src="./src/assets/skills/react.png" alt="" className="mb-6" />
+            <h5 >Express</h5>
+            
+          </div>
+          <div className="flex flex-col items-center space-y-5">
+            <img src="./src/assets/skills/react.png" alt="" className="mb-6" />
+            <h5 >Express</h5>
+            
+          </div>
+          <div className="flex flex-col items-center space-y-5">
+            <img src="./src/assets/skills/react.png" alt="" className="mb-6" />
+            <h5 >Express</h5>
+            
+          </div>
+          <div className="flex flex-col items-center space-y-5">
+            <img src="./src/assets/skills/react.png" alt="" className="mb-6" />
+            <h5 >Express</h5>
+            
+          </div>
+          <div className="flex flex-col items-center space-y-5">
+            <img src="./src/assets/skills/react.png" alt="" className="mb-6" />
+            <h5 >Express</h5>
+            
+          </div>
+          <div className="flex flex-col items-center space-y-5">
+            <img src="./src/assets/skills/react.png" alt="" className="mb-6" />
+            <h5 >Express</h5>
+            
+          </div>
+        </div>
+    </section>
+        <section id="projects" className="py-10 max-w-5xl mx-auto">
+
+        <h3 className="text-3xl py-1 text-center dark:text-white "> My Projects</h3>
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 py-10 lg:flex-row lg:flex-wrap">
         <div className="flex justify-center" >
             <div className="relative w-96 h-60 rounded-2xl text-white overflow-hidden cursor-pointer transition-all duration-700 card">
               <FrontOfCard><img
@@ -140,7 +214,8 @@ const App = () => {
           </div>
         
         </div>
-      </section>
+        </section>
+      
     </div>
     </div>
   );

@@ -19,3 +19,40 @@
         @apply hover:w-8 ease-out duration-200
     } */
 }
+
+body {
+background-image : url('../images/bg-header-desktop.png');
+background-repeat : no-repeat;
+background-size: contain;
+}
+
+@media (max-width : 576px){
+    body{
+        background-image : url('../images/bg-header-mobile.png');
+    
+    }
+}
+.section-content{
+@apply max-w-3xl mx-auto text-xl leading-9  text-grayishBlue
+}
+.section-container {
+ @apply max-w-6xl mx-auto  text-center 
+}
+.button-container{
+@apply p-4 rounded-full shadow-lg duration-200
+        hover:opacity-80
+}
+@layer base {
+    h3{
+        @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl
+    }
+    h5{
+        @apply  text-2xl font-bold text-lightBlue md:text-3xl
+    }
+}
+
+.section-icons{
+@apply hover:scale-105 dark:text-white text-2xl
+
+}
+
